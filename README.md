@@ -106,17 +106,17 @@ See the [Laravel documentation](https://laravel.com/docs/7.x/testing#artisan-tes
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/HZICT/dtiw/tags). 
 
 ## Authors
 * **Daan de Waard** - *Initial work* - [dwaard](https://github.com/dwaard)
 
-See also the list of [contributors](https://github.com/dwaard/laravel-best-practices/contributors) who 
+See also the list of [contributors](https://github.com/HZICT/dtiw/contributors) who 
 participated in this project.
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgements
 
