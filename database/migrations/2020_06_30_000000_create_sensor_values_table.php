@@ -17,7 +17,7 @@ class CreateSensorvaluesTable extends Migration
             $table->id();
             $table->timestamp('timestamp')->nullable();
             $table->string('name');
-            $table->floatval('value');
+            $table->float('value');
         });
     }
 
