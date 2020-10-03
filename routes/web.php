@@ -20,6 +20,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/', 'SensorValueController@store');
-
 Route::resource('sensorvalues', 'SensorValueController');
