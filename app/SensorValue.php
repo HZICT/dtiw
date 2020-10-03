@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SensoValue extends Model
+class SensorValue extends Model
 {
     protected $fillable = [
         'timestamp', 'name', 'value'

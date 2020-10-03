@@ -34,8 +34,14 @@ class SensorValueController extends Controller
      */
     public function store(Request $request)
     {
-        SensorValue::create(request()->all());
-        return response(201);
+        $sensorValue = new SensorValue;
+        $sensorValue->timestamp = $request->input('timestamp');
+        $sensorValue->name = $request->input('name');
+        $sensorValue->value = $request->input('value');
+        if ($sensorValue->save()) {
+        return new SensorValueResource($sensorValue);
+        }
+        return null;
     }
 
     /**
