@@ -35,7 +35,7 @@ class SensorValueController extends Controller
     public function store(Request $request)
     {
         SensorValue::create(request()->all());
-        return response(201)
+        return response(201);
     }
 
     /**
