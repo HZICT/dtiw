@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'SensorValueController@index');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::post('/', 'SensorValueController@store');
 
 Route::resource('sensorvalues', 'SensorValueController');
