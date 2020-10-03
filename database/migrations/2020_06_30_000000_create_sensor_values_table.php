@@ -13,11 +13,13 @@ class CreateSensorvaluesTable extends Migration
      */
     public function up()
     {
-        Schema::create('sensorvalues', function (Blueprint $table) {
+        Schema::create('sensor_values', function (Blueprint $table) {
             $table->id();
             $table->timestamp('timestamp')->nullable();
             $table->string('name');
             $table->float('value');
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->nullable();
         });
     }
 
@@ -28,6 +30,6 @@ class CreateSensorvaluesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sensorvalues');
+        Schema::dropIfExists('sensor_values');
     }
 }
