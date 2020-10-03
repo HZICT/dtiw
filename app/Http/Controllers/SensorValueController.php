@@ -16,13 +16,19 @@ class SensorValueController extends Controller
      * @return \Illuminate\Http\Response
      */
    
-    public function index(): AnonymousResourceCollection
-    {
-        // Get Sensorvalues
-        $sensorvalues = SensorValue::all();
+    // public function index(): AnonymousResourceCollection
+    // {
+    //     // Get Sensorvalues
+    //     $sensorvalues = SensorValue::all();
 
-        // Return sensorvalues as a resource
-        return SensorValueResource::collection($sensorvalues);
+    //     // Return sensorvalues as a resource
+    //     return SensorValueResource::collection($sensorvalues);
+    // }
+
+    public function index()
+    {
+        $sensorvalues = SensorValue::all();
+        return view('welcome')->with('sensorvalues', $sensorvalues);
     }
 
     // public function index()
