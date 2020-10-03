@@ -18,5 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Create new article
+// List Sensorvalues
+Route::get('sensorvalues', 'SensorValueController@index');
+
+// Create new Sensor value
 Route::post('sensorvalue', 'SensorValueController@store');
