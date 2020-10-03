@@ -31,12 +31,6 @@ class SensorValueController extends Controller
         return view('welcome')->with('sensorvalues', $sensorvalues);
     }
 
-    // public function index()
-    // {
-    //     $comments = Comment::orderBy('updated_at', 'desc')->get();
-    //     return view('comments.index')->with('comments', $comments);
-    // }
-
     /**
      * Show the form for creating a new resource.
      *
