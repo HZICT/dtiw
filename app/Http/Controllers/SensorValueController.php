@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\SensorValue;
 use App\Http\Resources\SensorValue as SensorValueResource;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 use Illuminate\Http\Request;
 
@@ -14,9 +15,20 @@ class SensorValueController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+   
+    public function apiIndex(): AnonymousResourceCollection
+    {
+        // Get Sensorvalues
+        $sensorvalues = SensorValue::all();
+
+        // Return sensorvalues as a resource
+        return SensorValueResource::collection($sensorvalues);
+    }
+
     public function index()
     {
-        //
+        $sensorvalues = SensorValue::all();
+        return view('welcome')->with('sensorvalues', $sensorvalues);
     }
 
     /**
