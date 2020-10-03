@@ -28,7 +28,7 @@ class SensorValueController extends Controller
     public function index()
     {
         $sensorvalues = SensorValue::all();
-        return view('welcome')->with('sensorvalues', $sensorvalues);
+        return view('sensorvalues.index')->with('sensorvalues', $sensorvalues);
     }
 
     /**
