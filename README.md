@@ -2,6 +2,26 @@
 
 Website for handling data to and from the solar boat, made in Laravel.
 
+# Sending data to the website (JSON API)
+Data can be sent to the website through a POST-request. Each datapoint contains the following fields:
+- Timestamp (timestamp) (nullable)
+- Name (string)
+- Value (float)
+
+## Example
+
+Send a POST-request to `http://dtiw.hz.nl/telemetrie/api/sensorvalues` with the following body:
+
+```
+    {
+        "timestamp": "2020-10-03 15:00:00",
+        "name": "23-12-2020",
+        "value": 22.23,
+    }
+```
+
+This can also be applied to the test environment using `localhost/api/sensorvalues`
+
 # Laravel Best Practices
 
 Demonstrates best practices when working with Laravel and Github. Source: [Laravel-best-practices](https://github.com/dwaard/laravel-best-practices/wiki). 
