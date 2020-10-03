@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\SensorValue;
+use App\Http\Resources\SensorValue as SensorValueResource;
+
 use Illuminate\Http\Request;
 
 class SensorValueController extends Controller
