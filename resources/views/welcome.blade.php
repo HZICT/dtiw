@@ -6,6 +6,8 @@
 
 @section('content')
 
+<a href="{{route('sensorvalues.index')}}">Go to sensor values page</a>
+
     <div>
         <table>
             <thead>
